@@ -2665,6 +2665,40 @@ input, select, textarea {
 		width: 35%;
 	}
 
+		/*This is the hacky block of code that I'm using to standardize the header text across all the pages*/
+		.headertext_hi::after {
+			color: #ffffff;			
+			font-size: 1.35em;
+			line-height: 1.75em;
+			margin: 0;
+		 	content: "Hi, my name is Harith";
+		}
+
+		.headertext_hometown::after {
+			color: #e0e0e0/*#b2b2b2*/;
+			position: relative;
+			margin: 0 0 1.5em 0;
+			font-size: 95%;	
+		 	content: "I was born and raised in Brooklyn, NY.";
+		}
+
+		.headertext_pitch::after {
+			color: #e0e0e0/*#b2b2b2*/;
+			position: relative;
+			margin: 0 0 1.5em 0;
+			font-size: 96%;
+		 	content: "I studied Mechanical Engineering at MIT. Now I'm pursuing a Masters at Purdue. I am interested in Mechatronics, Renewable Energy, and Design.";
+		}
+
+		.headertext_closing::after {
+			color: #e0e0e0/*#b2b2b2*/;
+			position: relative;
+			margin: 0 0 1.5em 0;
+			font-size: 95%;
+		 	content: "Ultimately, I am searching for ways to positively impact the world.";
+		}
+		/*--------------------------------------------------------------------------------------------------*/
+
 		#header > * {
 			-moz-flex-shrink: 0;
 			-webkit-flex-shrink: 0;
